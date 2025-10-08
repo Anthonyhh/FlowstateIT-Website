@@ -4,42 +4,41 @@
 
 @layer base {
   :root {
-    /* Robolabs-inspired dark-first theme */
-    --background: 0 0% 2%; /* Deep black #050505 */
+    /* FlowstateIT violet/cyan gradient theme */
+    --background: 240 11% 4%; /* Deep dark #0A0A0D */
     --foreground: 0 0% 98%;
-    --card: 0 0% 3%;
+    --card: 240 10% 6%;
     --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3%;
+    --popover: 240 10% 6%;
     --popover-foreground: 0 0% 98%;
-    --primary: 25 100% 50%; /* Orange #E36D00 */
+    --primary: 280 100% 50%; /* Violet #7F00FF */
     --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 10%;
+    --secondary: 300 100% 50%; /* Secondary violet #E100FF */
     --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 10%;
+    --muted: 240 5% 15%;
     --muted-foreground: 0 0% 65%;
-    --accent: 25 100% 50%; /* Orange accent */
-    --accent-foreground: 0 0% 98%;
+    --accent: 190 100% 50%; /* Cyan #00CFFF */
+    --accent-foreground: 0 0% 5%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 15%;
-    --input: 0 0% 15%;
-    --ring: 25 100% 50%;
-    --radius: 1.5rem; /* Rounder corners like Robolabs */
+    --border: 240 5% 20%;
+    --input: 240 5% 20%;
+    --ring: 280 100% 50%;
+    --radius: 1.5rem;
 
-    /* Font variables */
-    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-    --font-heading: var(--font-heading), 'Inter', system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+    /* Font variables - loaded via next/font */
+    /* Note: Replace with Satoshi Variable (premium font) when purchased */
 
-    /* Robolabs color palette */
-    --orange: 25 100% 50%; /* #E36D00 */
-    --orange-light: 25 100% 70%; /* #FFB168 */
-    --black-deep: 0 0% 2%; /* #050505 */
-    --black-pure: 0 0% 0%; /* #000000 */
-    --gray-900: 0 0% 5%;
-    --gray-800: 0 0% 10%;
-    --gray-700: 0 0% 15%;
-    --gray-600: 0 0% 25%;
+    /* FlowstateIT color palette */
+    --violet-primary: 280 100% 50%; /* #7F00FF */
+    --violet-secondary: 300 100% 50%; /* #E100FF */
+    --cyan-accent: 190 100% 50%; /* #00CFFF */
+    --background-dark: 240 11% 4%; /* #0A0A0D */
+    --background-light: 240 9% 98%; /* #F8F8FB */
+    --gray-900: 240 5% 10%;
+    --gray-800: 240 4% 15%;
+    --gray-700: 240 3% 20%;
+    --gray-600: 240 2% 30%;
     --gray-500: 0 0% 40%;
     --gray-400: 0 0% 55%;
     --gray-300: 0 0% 70%;
@@ -48,24 +47,24 @@
   }
 
   .light {
-    /* Light mode fallback - maintaining dark-first approach */
-    --background: 0 0% 98%;
-    --foreground: 0 0% 5%;
+    /* Light mode - FlowstateIT theme */
+    --background: 240 9% 98%; /* #F8F8FB */
+    --foreground: 240 11% 4%;
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 5%;
+    --card-foreground: 240 11% 4%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 5%;
-    --primary: 25 100% 50%;
+    --popover-foreground: 240 11% 4%;
+    --primary: 280 100% 50%; /* Violet */
     --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 95%;
-    --secondary-foreground: 0 0% 5%;
+    --secondary: 300 100% 50%; /* Secondary violet */
+    --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 95%;
     --muted-foreground: 0 0% 40%;
-    --accent: 25 100% 50%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 190 100% 50%; /* Cyan */
+    --accent-foreground: 240 11% 4%;
     --border: 0 0% 85%;
     --input: 0 0% 85%;
-    --ring: 25 100% 50%;
+    --ring: 280 100% 50%;
   }
 }
 
@@ -85,13 +84,23 @@
 }
 
 @layer utilities {
-  /* Text gradients - Robolabs style */
+  /* Text gradients - FlowstateIT violet/cyan */
   .text-gradient {
-    @apply bg-gradient-to-r from-orange-500 via-orange-400 to-orange-300 bg-clip-text text-transparent;
+    background: linear-gradient(135deg, #7F00FF 0%, #E100FF 50%, #00CFFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
-  .text-gradient-orange {
-    background: linear-gradient(135deg, hsl(var(--orange)), hsl(var(--orange-light)));
+  .text-gradient-violet {
+    background: linear-gradient(135deg, hsl(var(--violet-primary)), hsl(var(--violet-secondary)));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-full {
+    background: linear-gradient(135deg, hsl(var(--violet-primary)) 0%, hsl(var(--violet-secondary)) 50%, hsl(var(--cyan-accent)) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -106,19 +115,31 @@
     @apply bg-black/10 backdrop-blur-lg border border-black/20;
   }
 
-  /* Glow effects - Robolabs orange */
+  /* Glow effects - FlowstateIT violet/cyan */
   .glow {
-    box-shadow: 0 0 20px hsl(var(--orange) / 0.3);
+    box-shadow: 0 0 20px hsl(var(--violet-primary) / 0.3);
   }
 
-  .glow-orange {
+  .glow-violet {
     box-shadow:
-      0 0 30px hsl(var(--orange) / 0.4),
-      0 0 60px hsl(var(--orange) / 0.2);
+      0 0 30px hsl(var(--violet-primary) / 0.4),
+      0 0 60px hsl(var(--violet-primary) / 0.2);
+  }
+
+  .glow-cyan {
+    box-shadow:
+      0 0 30px hsl(var(--cyan-accent) / 0.4),
+      0 0 60px hsl(var(--cyan-accent) / 0.2);
+  }
+
+  .glow-gradient {
+    box-shadow:
+      0 0 30px hsl(var(--violet-primary) / 0.3),
+      0 0 60px hsl(var(--cyan-accent) / 0.2);
   }
 
   .text-glow {
-    text-shadow: 0 0 20px hsl(var(--orange) / 0.6);
+    text-shadow: 0 0 20px hsl(var(--violet-primary) / 0.6);
   }
 
   /* Shimmer effect */
@@ -189,7 +210,20 @@
     animation-delay: 600ms;
   }
 
-  /* Robolabs-inspired fluid typography */
+  /* Gradient backgrounds */
+  .bg-gradient-violet {
+    background: linear-gradient(135deg, hsl(var(--violet-primary)), hsl(var(--violet-secondary)));
+  }
+
+  .bg-gradient-primary {
+    background: linear-gradient(135deg, #7F00FF 0%, #E100FF 50%, #00CFFF 100%);
+  }
+
+  .bg-gradient-radial-violet {
+    background: radial-gradient(circle at center, hsl(var(--violet-primary) / 0.2) 0%, transparent 70%);
+  }
+
+  /* Fluid typography */
   .text-fluid-xs {
     font-size: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
   }
@@ -230,19 +264,19 @@
     font-size: clamp(6rem, 4.5rem + 7.5vw, 10rem);
   }
 
-  /* Robolabs heading styles */
+  /* FlowstateIT heading styles */
   .heading-display {
     font-family: var(--font-heading);
-    font-weight: 900;
+    font-weight: 700;
     line-height: 0.9;
     letter-spacing: -0.02em;
   }
 
   .heading-primary {
     font-family: var(--font-heading);
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.1;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
 
   .heading-secondary {

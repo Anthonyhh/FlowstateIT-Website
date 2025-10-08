@@ -39,7 +39,9 @@
       "Bash(pnpm test:run:*)",
       "Bash(pnpm typecheck:*)",
       "Bash(pnpm lint:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(git remote remove:*)",
+      "Bash(git remote rename:*)"
     ],
     "deny": [],
     "ask": []

@@ -1,0 +1,74 @@
+{
+  "brand": "FlowstateIT",
+  "tagline": "AI Website Factory",
+  "palette": {
+    "primary": "#7F00FF",
+    "secondary": "#E100FF",
+    "accent": "#00CFFF",
+    "background": "#0A0A0D",
+    "backgroundLight": "#F8F8FB",
+    "text": "#FFFFFF",
+    "textDark": "#0D0D0D"
+  },
+  "typography": {
+    "fontHeading": "Outfit",
+    "fontBody": "Inter",
+    "fontMono": "JetBrains Mono",
+    "notes": {
+      "satoshi": "Replace Outfit with Satoshi Variable (premium) from https://www.fontshare.com/fonts/satoshi",
+      "geistMono": "Replace JetBrains Mono with Geist Mono from https://vercel.com/font if desired"
+    }
+  },
+  "effects": {
+    "gradientStyle": "linear-gradient(135deg, #7F00FF 0%, #E100FF 50%, #00CFFF 100%)",
+    "gradientViolet": "linear-gradient(135deg, #7F00FF 0%, #E100FF 100%)",
+    "gradientCyan": "linear-gradient(135deg, #E100FF 0%, #00CFFF 100%)",
+    "motionIntensity": "medium",
+    "shadowSoft": "0 10px 40px rgba(0, 0, 0, 0.4)",
+    "shadowGlow": "0 0 30px rgba(127, 0, 255, 0.4)",
+    "borderRadius": "1.5rem",
+    "transitionDuration": "300ms"
+  },
+  "layout": {
+    "sectionHeight": "100vh",
+    "sectionPadding": "96px",
+    "gridBase": "8px",
+    "containerMaxWidth": "1400px",
+    "breakpoints": {
+      "mobile": "768px",
+      "tablet": "1024px",
+      "desktop": "1440px"
+    }
+  },
+  "animation": {
+    "parallaxHero": 1.1,
+    "parallaxBackground": 0.8,
+    "staggerDelay": 200,
+    "fadeInDuration": 500,
+    "hoverDuration": 300,
+    "complexDuration": 700
+  },
+  "components": {
+    "heroSection": {
+      "description": "Gradient intro + CTA with fade + gradient wave animation"
+    },
+    "featureGrid": {
+      "description": "Services overview with staggered scale + tilt hover"
+    },
+    "caseStudyCarousel": {
+      "description": "Client stories with drag scroll motion"
+    },
+    "aiBackground": {
+      "description": "Flowing particles with Three.js + scroll sync"
+    },
+    "contactCTA": {
+      "description": "Call to action with pulse gradient hover"
+    }
+  },
+  "seo": {
+    "title": "FlowstateIT - AI Website Factory",
+    "description": "A self-deploying, keyword-adaptive website platform that merges enterprise-grade headless architecture with cinematic design",
+    "keywords": ["AI", "Website Factory", "PayloadCMS", "Next.js", "Automation"],
+    "ogImage": "/og-image.png"
+  }
+}
