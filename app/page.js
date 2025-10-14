@@ -1300,7 +1300,7 @@ export default function FlowStateIT() {
             >
               <Card className="bg-neutral-800/50 backdrop-blur-sm border-neutral-700/50">
                 <CardHeader>
-                  <CardTitle className="text-2xl">Send us a message</CardTitle>
+                  <CardTitle className="text-2xl text-white">Send us a message</CardTitle>
                   <CardDescription>We'll respond within 24 hours</CardDescription>
                 </CardHeader>
                 <CardContent>
