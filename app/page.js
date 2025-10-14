@@ -822,7 +822,7 @@ export default function FlowStateIT() {
                     </CardDescription>
                   </CardHeader>
                   <CardContent>
-                    <h4 className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-3">
+                    <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-3">
                       Key Benefits:
                     </h4>
                     <ul className="space-y-2">
