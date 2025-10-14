@@ -533,6 +533,7 @@ export default function FlowStateIT() {
                         }
                       }}
                       className="absolute"
+                      suppressHydrationWarning
                       style={{
                         left: `calc(50% + ${x}px)`,
                         top: `calc(50% + ${y}px)`,
