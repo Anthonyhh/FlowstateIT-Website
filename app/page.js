@@ -901,7 +901,7 @@ export default function FlowStateIT() {
       </section>
 
       {/* Pricing Section */}
-      <section id="pricing" className="py-24 md:py-32">
+      <section id="pricing" className="py-12 md:py-16">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
