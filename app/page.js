@@ -1159,20 +1159,20 @@ export default function FlowStateIT() {
                         placeholder="Your Name"
                         value={quizAnswers[`${currentQuestion.id}-name`] || ''}
                         onChange={(e) => handleQuizAnswer(`${currentQuestion.id}-name`, e.target.value)}
-                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9]"
+                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9] text-white placeholder:text-neutral-500"
                       />
                       <Input
                         type="email"
                         placeholder="Email Address"
                         value={quizAnswers[`${currentQuestion.id}-email`] || ''}
                         onChange={(e) => handleQuizAnswer(`${currentQuestion.id}-email`, e.target.value)}
-                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9]"
+                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9] text-white placeholder:text-neutral-500"
                       />
                       <Input
                         placeholder="Company Name"
                         value={quizAnswers[`${currentQuestion.id}-company`] || ''}
                         onChange={(e) => handleQuizAnswer(`${currentQuestion.id}-company`, e.target.value)}
-                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9]"
+                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9] text-white placeholder:text-neutral-500"
                       />
                     </div>
                   )}
