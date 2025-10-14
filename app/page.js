@@ -1412,7 +1412,7 @@ export default function FlowStateIT() {
 
               <Card className="bg-gradient-to-br from-[#6C2BD9]/20 to-[#FF7A1A]/20 border-[#6C2BD9]/30">
                 <CardContent className="pt-6">
-                  <h4 className="font-semibold mb-2 flex items-center gap-2">
+                  <h4 className="font-semibold mb-2 flex items-center gap-2 text-white">
                     <Sparkles className="w-5 h-5 text-[#FF7A1A]" />
                     Quick Start
                   </h4>
