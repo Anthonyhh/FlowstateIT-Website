@@ -546,6 +546,7 @@ export default function FlowStateIT() {
                       {/* Connection Line */}
                       <svg 
                         className="absolute inset-0 pointer-events-none"
+                        suppressHydrationWarning
                         style={{ 
                           width: Math.abs(x) * 2, 
                           height: Math.abs(y) * 2,
@@ -556,6 +557,7 @@ export default function FlowStateIT() {
                         }}
                       >
                         <motion.line
+                          suppressHydrationWarning
                           x1={x < 0 ? Math.abs(x) * 2 : 0}
                           y1={y < 0 ? Math.abs(y) * 2 : 0}
                           x2={x < 0 ? Math.abs(x) : Math.abs(x)}
