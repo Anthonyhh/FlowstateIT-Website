@@ -1387,7 +1387,7 @@ export default function FlowStateIT() {
               </div>
 
               <div>
-                <h4 className="font-semibold mb-4">Follow Us</h4>
+                <h4 className="font-semibold mb-4 text-white">Follow Us</h4>
                 <div className="flex gap-4">
                   <a 
                     href="#" 
