@@ -1306,38 +1306,38 @@ export default function FlowStateIT() {
                 <CardContent>
                   <form onSubmit={handleContactSubmit} className="space-y-4">
                     <div>
-                      <label className="text-sm font-medium mb-2 block">Name</label>
+                      <label className="text-sm font-medium mb-2 block text-white">Name</label>
                       <Input 
                         name="name" 
                         required 
-                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9]"
+                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9] text-white placeholder:text-neutral-500"
                         placeholder="Your name"
                       />
                     </div>
                     <div>
-                      <label className="text-sm font-medium mb-2 block">Email</label>
+                      <label className="text-sm font-medium mb-2 block text-white">Email</label>
                       <Input 
                         name="email" 
                         type="email" 
                         required 
-                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9]"
+                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9] text-white placeholder:text-neutral-500"
                         placeholder="your@email.com"
                       />
                     </div>
                     <div>
-                      <label className="text-sm font-medium mb-2 block">Company</label>
+                      <label className="text-sm font-medium mb-2 block text-white">Company</label>
                       <Input 
                         name="company" 
-                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9]"
+                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9] text-white placeholder:text-neutral-500"
                         placeholder="Your company"
                       />
                     </div>
                     <div>
-                      <label className="text-sm font-medium mb-2 block">Message</label>
+                      <label className="text-sm font-medium mb-2 block text-white">Message</label>
                       <Textarea 
                         name="message" 
                         required 
-                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9] min-h-[120px]"
+                        className="bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9] min-h-[120px] text-white placeholder:text-neutral-500"
                         placeholder="Tell us about your project..."
                       />
                     </div>
