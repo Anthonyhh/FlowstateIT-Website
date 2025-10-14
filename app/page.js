@@ -842,7 +842,7 @@ export default function FlowStateIT() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-24 md:py-32 bg-neutral-900/50 relative overflow-hidden">
+      <section className="py-12 md:py-16 bg-neutral-900/50 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <img 
             src="https://images.unsplash.com/photo-1557180491-4c2f503222d9" 
