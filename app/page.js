@@ -585,29 +585,23 @@ export default function FlowStateIT() {
 
       {/* Animated Background Particles */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
-        {[...Array(20)].map((_, i) => {
-          const randomX = Math.random() * 100
-          const randomY = Math.random() * 100
-          const randomEndX = Math.random() * 100
-          const randomEndY = Math.random() * 100
-          return (
-            <motion.div
-              key={i}
-              className="absolute w-2 h-2 rounded-full bg-[#6C2BD9]/20"
-              style={{ left: `${randomX}%`, top: `${randomY}%` }}
-              animate={{
-                y: [`0%`, `${randomEndY - randomY}%`],
-                x: [`0%`, `${randomEndX - randomX}%`],
-              }}
-              transition={{
-                duration: 10 + Math.random() * 20,
-                repeat: Infinity,
-                repeatType: "reverse",
-                ease: "linear"
-              }}
-            />
-          )
-        })}
+        {particles.map((particle) => (
+          <motion.div
+            key={particle.id}
+            className="absolute w-2 h-2 rounded-full bg-[#6C2BD9]/20"
+            style={{ left: `${particle.randomX}%`, top: `${particle.randomY}%` }}
+            animate={{
+              y: [`0%`, `${particle.randomEndY - particle.randomY}%`],
+              x: [`0%`, `${particle.randomEndX - particle.randomX}%`],
+            }}
+            transition={{
+              duration: particle.duration,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "linear"
+            }}
+          />
+        ))}
       </div>
 
       {/* Statistics Section */}
