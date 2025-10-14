@@ -794,7 +794,7 @@ export default function FlowStateIT() {
             <Badge className="mb-4 bg-[#6C2BD9]/10 text-[#6C2BD9] border-[#6C2BD9]/30">
               Solutions
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Real-World AI Applications
             </h2>
             <p className="text-lg md:text-xl text-white max-w-[700px] mx-auto">
