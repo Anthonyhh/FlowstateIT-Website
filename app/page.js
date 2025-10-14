@@ -927,7 +927,7 @@ export default function FlowStateIT() {
             >
               <Card className="bg-neutral-800/50 border-neutral-700/50 hover:border-[#6C2BD9]/50 transition-all h-full backdrop-blur-sm">
                 <CardHeader className="pb-4">
-                  <CardTitle className="text-3xl md:text-4xl mb-4">
+                  <CardTitle className="text-3xl md:text-4xl mb-4 text-white">
                     AI Partner
                   </CardTitle>
                   <CardDescription className="text-base md:text-lg text-white leading-relaxed">
