@@ -1097,7 +1097,7 @@ export default function FlowStateIT() {
                                 <div className="w-3 h-3 rounded-full bg-[#6C2BD9]" />
                               )}
                             </div>
-                            <span>{option}</span>
+                            <span className="text-white">{option}</span>
                           </div>
                         </button>
                       ))}
@@ -1136,7 +1136,7 @@ export default function FlowStateIT() {
                               }`}>
                                 {selected && <Check className="w-4 h-4 text-white" />}
                               </div>
-                              <span>{option}</span>
+                              <span className="text-white">{option}</span>
                             </div>
                           </button>
                         )
