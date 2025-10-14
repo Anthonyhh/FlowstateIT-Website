@@ -1149,7 +1149,7 @@ export default function FlowStateIT() {
                       placeholder={currentQuestion.placeholder}
                       value={quizAnswers[currentQuestion.id] || ''}
                       onChange={(e) => handleQuizAnswer(currentQuestion.id, e.target.value)}
-                      className="w-full min-h-[120px] bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9]"
+                      className="w-full min-h-[120px] bg-neutral-900/50 border-neutral-700 focus:border-[#6C2BD9] text-white placeholder:text-neutral-500"
                     />
                   )}
 
