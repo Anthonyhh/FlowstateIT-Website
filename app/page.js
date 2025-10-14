@@ -406,7 +406,7 @@ export default function FlowStateIT() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-20">
+      <section className="relative min-h-screen flex items-center pt-16">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-[#6C2BD9]/20 via-transparent to-[#FF7A1A]/10" />
           <img 
@@ -416,7 +416,7 @@ export default function FlowStateIT() {
           />
         </div>
         
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-16 md:py-24 relative z-10">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-12 md:py-16 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
             <motion.div 
