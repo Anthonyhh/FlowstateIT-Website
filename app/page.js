@@ -382,16 +382,16 @@ export default function FlowStateIT() {
             </div>
             
             <div className="hidden md:flex items-center gap-8">
-              <button onClick={() => scrollToSection('services')} className="text-neutral-300 hover:text-white transition">
+              <button onClick={() => scrollToSection('services')} className="text-white hover:text-white transition">
                 Services
               </button>
-              <button onClick={() => scrollToSection('process')} className="text-neutral-300 hover:text-white transition">
+              <button onClick={() => scrollToSection('process')} className="text-white hover:text-white transition">
                 Process
               </button>
-              <button onClick={() => scrollToSection('solutions')} className="text-neutral-300 hover:text-white transition">
+              <button onClick={() => scrollToSection('solutions')} className="text-white hover:text-white transition">
                 Solutions
               </button>
-              <button onClick={() => scrollToSection('pricing')} className="text-neutral-300 hover:text-white transition">
+              <button onClick={() => scrollToSection('pricing')} className="text-white hover:text-white transition">
                 Pricing
               </button>
               <Button 
@@ -445,7 +445,7 @@ export default function FlowStateIT() {
               </h1>
               
               {/* Subheadline */}
-              <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-[600px]">
+              <p className="text-lg md:text-xl text-white leading-relaxed max-w-[600px]">
                 Transform your workflows with custom AI automation no technical expertise required. 
                 Get audit results in 24 hours.
               </p>
@@ -659,7 +659,7 @@ export default function FlowStateIT() {
                 style={{ transformStyle: 'preserve-3d' }}
               >
                 <partner.icon className="w-10 h-10 text-[#6C2BD9]" />
-                <span className="text-sm font-medium text-neutral-300">{partner.name}</span>
+                <span className="text-sm font-medium text-white">{partner.name}</span>
               </motion.div>
             ))}
           </div>
@@ -712,7 +712,7 @@ export default function FlowStateIT() {
                       {service.features.map((feature) => (
                         <li key={feature} className="flex items-start gap-2">
                           <CheckCircle2 className="w-5 h-5 text-[#6C2BD9] mt-0.5 flex-shrink-0" />
-                          <span className="text-neutral-300">{feature}</span>
+                          <span className="text-white">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -829,7 +829,7 @@ export default function FlowStateIT() {
                       {solution.benefits.map((benefit) => (
                         <li key={benefit} className="flex items-start gap-2">
                           <Check className="w-5 h-5 text-[#6C2BD9] mt-0.5 flex-shrink-0" />
-                          <span className="text-neutral-300">{benefit}</span>
+                          <span className="text-white">{benefit}</span>
                         </li>
                       ))}
                     </ul>
@@ -884,7 +884,7 @@ export default function FlowStateIT() {
                         <Sparkles key={i} className="w-4 h-4 text-[#FF7A1A] fill-[#FF7A1A]" />
                       ))}
                     </div>
-                    <p className="text-neutral-300 mb-6 leading-relaxed">
+                    <p className="text-white mb-6 leading-relaxed">
                       "{testimonial.content}"
                     </p>
                     <div className="border-t border-neutral-700 pt-4">
@@ -958,7 +958,7 @@ export default function FlowStateIT() {
                       {['Adaptive pricing', 'Use case discovery', 'Access to AI Expert Network'].map((feature) => (
                         <li key={feature} className="flex items-start gap-3">
                           <Check className="w-5 h-5 text-[#6C2BD9] mt-0.5 flex-shrink-0" />
-                          <span className="text-base text-neutral-300 leading-relaxed">{feature}</span>
+                          <span className="text-base text-white leading-relaxed">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -1016,7 +1016,7 @@ export default function FlowStateIT() {
                       ].map((feature) => (
                         <li key={feature} className="flex items-start gap-3">
                           <Check className="w-5 h-5 text-[#6C2BD9] mt-0.5 flex-shrink-0" />
-                          <span className="text-base text-neutral-300 leading-relaxed">{feature}</span>
+                          <span className="text-base text-white leading-relaxed">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -1416,7 +1416,7 @@ export default function FlowStateIT() {
                     <Sparkles className="w-5 h-5 text-[#FF7A1A]" />
                     Quick Start
                   </h4>
-                  <p className="text-sm text-neutral-300 mb-4">
+                  <p className="text-sm text-white mb-4">
                     Book a free 30-minute consultation to explore how AI can transform your business.
                   </p>
                   <Button 
