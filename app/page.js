@@ -802,7 +802,7 @@ export default function FlowStateIT() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {solutions.map((solution, index) => (
               <motion.div
                 key={solution.title}
@@ -810,6 +810,8 @@ export default function FlowStateIT() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
+                whileHover={{ scale: 1.02, rotateY: 2, z: 50 }}
+                style={{ transformStyle: 'preserve-3d' }}
               >
                 <Card className="bg-neutral-800/80 backdrop-blur-sm border-neutral-700/50 hover:border-[#6C2BD9]/50 transition-all h-full">
                   <CardHeader>
