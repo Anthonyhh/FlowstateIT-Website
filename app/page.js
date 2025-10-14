@@ -542,8 +542,69 @@ export default function FlowStateIT() {
         </div>
       </section>
 
+      {/* Animated Background Particles */}
+      <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
+        {[...Array(20)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-2 h-2 rounded-full bg-[#6C2BD9]/20"
+            initial={{
+              x: Math.random() * window.innerWidth,
+              y: Math.random() * window.innerHeight,
+            }}
+            animate={{
+              y: [null, Math.random() * window.innerHeight],
+              x: [null, Math.random() * window.innerWidth],
+            }}
+            transition={{
+              duration: 10 + Math.random() * 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "linear"
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Statistics Section */}
+      <section className="relative py-16 md:py-24 border-y border-white/10 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#6C2BD9]/5 to-transparent" />
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+            {statistics.map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1, type: "spring" }}
+                className="text-center"
+              >
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  className="relative"
+                >
+                  <motion.div
+                    className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#6C2BD9] to-[#FF7A1A] mb-2"
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: index * 0.1 + 0.2 }}
+                  >
+                    <CountUp end={stat.value} duration={2} suffix={stat.suffix} />
+                  </motion.div>
+                  <p className="text-neutral-400 text-sm md:text-base font-medium">{stat.label}</p>
+                </motion.div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Trust Signals Section */}
-      <section className="bg-neutral-900/50 py-12 md:py-16 border-y border-white/10">
+      <section className="bg-neutral-900/50 py-12 md:py-16 border-b border-white/10">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <h3 className="text-center text-xl md:text-2xl font-semibold mb-8 text-neutral-400">
             Powered by Leading AI Technologies
@@ -563,7 +624,9 @@ export default function FlowStateIT() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-neutral-800/30 backdrop-blur-sm p-6 rounded-xl border border-neutral-700/50 hover:border-[#6C2BD9]/50 transition-all hover:scale-105 flex flex-col items-center gap-3"
+                whileHover={{ scale: 1.05, rotateY: 5 }}
+                className="bg-neutral-800/30 backdrop-blur-sm p-6 rounded-xl border border-neutral-700/50 hover:border-[#6C2BD9]/50 transition-all flex flex-col items-center gap-3"
+                style={{ transformStyle: 'preserve-3d' }}
               >
                 <partner.icon className="w-10 h-10 text-[#6C2BD9]" />
                 <span className="text-sm font-medium text-neutral-300">{partner.name}</span>
