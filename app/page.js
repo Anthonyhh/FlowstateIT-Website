@@ -597,7 +597,7 @@ export default function FlowStateIT() {
       </div>
 
       {/* Statistics Section */}
-      <section className="relative py-16 md:py-24 border-y border-white/10 overflow-hidden">
+      <section className="relative py-12 md:py-16 border-y border-white/10 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[#6C2BD9]/5 to-transparent" />
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
