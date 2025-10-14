@@ -1467,7 +1467,7 @@ export default function FlowStateIT() {
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Resources</h4>
+              <h4 className="font-semibold mb-4 text-white">Resources</h4>
               <ul className="space-y-2 text-sm text-white">
                 <li><a href="#quiz" className="hover:text-white transition">AI Readiness Audit</a></li>
                 <li><a href="#" className="hover:text-white transition">Blog</a></li>
