@@ -34,6 +34,33 @@ import { Badge } from '@/components/ui/badge'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { useToast } from '@/components/ui/use-toast'
 
+// Animated Counter Component
+function CountUp({ end, duration, suffix = '' }) {
+  const [count, setCount] = useState(0)
+  const ref = useRef(null)
+  const inView = useInView(ref, { once: true })
+
+  useEffect(() => {
+    if (!inView) return
+    
+    let startTime
+    const animate = (currentTime) => {
+      if (!startTime) startTime = currentTime
+      const progress = Math.min((currentTime - startTime) / (duration * 1000), 1)
+      
+      setCount(Math.floor(progress * end))
+      
+      if (progress < 1) {
+        requestAnimationFrame(animate)
+      }
+    }
+    
+    requestAnimationFrame(animate)
+  }, [inView, end, duration])
+
+  return <span ref={ref}>{count}{suffix}</span>
+}
+
 export default function FlowStateIT() {
   const { toast } = useToast()
   const [isScrolled, setIsScrolled] = useState(false)
