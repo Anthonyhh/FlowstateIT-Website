@@ -1379,7 +1379,7 @@ export default function FlowStateIT() {
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Location</h4>
+                      <h4 className="font-semibold mb-1 text-white">Location</h4>
                       <p className="text-white">United Kingdom</p>
                     </div>
                   </div>
