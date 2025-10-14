@@ -1362,7 +1362,7 @@ export default function FlowStateIT() {
               className="space-y-8"
             >
               <div>
-                <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
+                <h3 className="text-2xl font-bold mb-6 text-white">Get in Touch</h3>
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
                     <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#6C2BD9] to-[#FF7A1A] flex items-center justify-center flex-shrink-0">
