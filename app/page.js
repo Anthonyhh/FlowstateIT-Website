@@ -694,8 +694,10 @@ export default function FlowStateIT() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
+                whileHover={{ scale: 1.02, rotateY: 2, z: 50 }}
+                style={{ transformStyle: 'preserve-3d' }}
               >
-                <Card className="bg-neutral-800/30 border-neutral-700/50 hover:border-[#6C2BD9]/50 transition-all h-full hover:transform hover:-translate-y-1 backdrop-blur-sm">
+                <Card className="bg-neutral-800/30 border-neutral-700/50 hover:border-[#6C2BD9]/50 transition-all h-full backdrop-blur-sm">
                   <CardHeader>
                     <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#6C2BD9] to-[#FF7A1A] flex items-center justify-center mb-4">
                       <service.icon className="w-7 h-7 text-white" />
