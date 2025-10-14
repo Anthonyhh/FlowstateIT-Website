@@ -766,7 +766,7 @@ export default function FlowStateIT() {
                     </div>
                     <step.icon className="w-8 h-8 text-[#6C2BD9]" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-white">{step.title}</h3>
                   <p className="text-white">{step.description}</p>
                 </div>
               </motion.div>
