@@ -77,6 +77,19 @@ export default function FlowStateIT() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Generate particles on client side only to avoid hydration mismatch
+  useEffect(() => {
+    const generatedParticles = [...Array(20)].map((_, i) => ({
+      id: i,
+      randomX: Math.random() * 100,
+      randomY: Math.random() * 100,
+      randomEndX: Math.random() * 100,
+      randomEndY: Math.random() * 100,
+      duration: 10 + Math.random() * 20
+    }))
+    setParticles(generatedParticles)
+  }, [])
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id)
     if (element) {
