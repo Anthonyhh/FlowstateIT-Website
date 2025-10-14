@@ -1241,7 +1241,7 @@ export default function FlowStateIT() {
             <Badge className="mb-4 bg-[#6C2BD9]/10 text-[#6C2BD9] border-[#6C2BD9]/30">
               FAQ
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Frequently Asked Questions
             </h2>
           </motion.div>
