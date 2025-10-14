@@ -1073,7 +1073,7 @@ export default function FlowStateIT() {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4">{currentQuestion.question}</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-white">{currentQuestion.question}</h3>
                   
                   {currentQuestion.type === 'single' && (
                     <div className="space-y-3">
