@@ -1057,7 +1057,7 @@ export default function FlowStateIT() {
             <Card className="bg-neutral-800/50 backdrop-blur-sm border-neutral-700/50">
               <CardHeader>
                 <div className="flex items-center justify-between mb-4">
-                  <CardTitle className="text-2xl">
+                  <CardTitle className="text-2xl text-white">
                     Question {currentQuestionIndex + 1} of {quizQuestions.length}
                   </CardTitle>
                   <span className="text-sm text-white">{Math.round(progress)}% complete</span>
