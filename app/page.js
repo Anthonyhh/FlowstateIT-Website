@@ -700,7 +700,7 @@ export default function FlowStateIT() {
                     <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-[#6C2BD9] to-[#FF7A1A] flex items-center justify-center mb-4">
                       <service.icon className="w-7 h-7 text-white" />
                     </div>
-                    <CardTitle className="text-2xl mb-2">{service.title}</CardTitle>
+                    <CardTitle className="text-2xl mb-2 text-white">{service.title}</CardTitle>
                     <CardDescription className="text-neutral-400 text-base">
                       {service.description}
                     </CardDescription>
