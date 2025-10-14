@@ -150,7 +150,20 @@ export default function FlowStateIT() {
       description: 'AI-driven lead qualification, outreach automation, and sales intelligence.',
       benefits: ['Qualify leads automatically', 'Personalized outreach', 'Increase conversion rates'],
       icon: Target
+    },
+    {
+      title: 'Machine Learning & LLM Fine-tuning',
+      description: 'Custom model training and fine-tuning for domain-specific AI applications.',
+      benefits: ['Domain-specific accuracy', 'Proprietary model development', 'Reduced inference costs'],
+      icon: Brain
     }
+  ]
+
+  const statistics = [
+    { value: 500, label: 'Projects Completed', suffix: '+' },
+    { value: 98, label: 'Client Satisfaction', suffix: '%' },
+    { value: 40, label: 'Average Cost Reduction', suffix: '%' },
+    { value: 24, label: 'Average Delivery Time', suffix: 'hr' }
   ]
 
   const testimonials = [
