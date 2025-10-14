@@ -67,6 +67,7 @@ export default function FlowStateIT() {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [quizAnswers, setQuizAnswers] = useState({})
   const [showQuiz, setShowQuiz] = useState(false)
+  const [particles, setParticles] = useState([])
 
   useEffect(() => {
     const handleScroll = () => {
