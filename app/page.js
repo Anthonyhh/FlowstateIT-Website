@@ -1272,7 +1272,7 @@ export default function FlowStateIT() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24 md:py-32 bg-neutral-900/50">
+      <section id="contact" className="py-12 md:py-16 bg-neutral-900/50">
         <div className="max-w-[1200px] mx-auto px-6 md:px-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
