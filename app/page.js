@@ -1315,7 +1315,7 @@ export default function FlowStateIT() {
                   <CardDescription>We'll respond within 24 hours</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form onSubmit={handleContactSubmit} className="space-y-4">
+                  <form onSubmit={handleContactSubmit} className="space-y-4" suppressHydrationWarning>
                     <div>
                       <label className="text-sm font-medium mb-2 block text-white">Name</label>
                       <Input 
