@@ -1369,7 +1369,7 @@ export default function FlowStateIT() {
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-1">Email</h4>
+                      <h4 className="font-semibold mb-1 text-white">Email</h4>
                       <p className="text-white">hello@flowstateit.co.uk</p>
                     </div>
                   </div>
