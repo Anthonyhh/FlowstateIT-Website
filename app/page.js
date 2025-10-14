@@ -776,7 +776,7 @@ export default function FlowStateIT() {
       </section>
 
       {/* Solutions Section */}
-      <section id="solutions" className="py-24 md:py-32 relative overflow-hidden">
+      <section id="solutions" className="py-12 md:py-16 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img 
             src="https://images.unsplash.com/photo-1656703306407-88adf9044949" 
