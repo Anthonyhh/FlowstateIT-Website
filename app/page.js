@@ -1283,7 +1283,7 @@ export default function FlowStateIT() {
             <Badge className="mb-4 bg-[#FF7A1A]/10 text-[#FF7A1A] border-[#FF7A1A]/30">
               Contact Us
             </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Let's Talk About Your AI Journey
             </h2>
             <p className="text-lg md:text-xl text-white max-w-[700px] mx-auto">
