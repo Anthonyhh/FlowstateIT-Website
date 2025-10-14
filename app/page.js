@@ -979,7 +979,7 @@ export default function FlowStateIT() {
                   POPULAR
                 </div>
                 <CardHeader className="pb-4">
-                  <CardTitle className="text-3xl md:text-4xl mb-4">
+                  <CardTitle className="text-3xl md:text-4xl mb-4 text-white">
                     Fractional CAIO
                   </CardTitle>
                   <CardDescription className="text-base md:text-lg text-white leading-relaxed">
