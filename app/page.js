@@ -812,7 +812,7 @@ export default function FlowStateIT() {
                 <Card className="bg-neutral-800/80 backdrop-blur-sm border-neutral-700/50 hover:border-[#6C2BD9]/50 transition-all h-full">
                   <CardHeader>
                     <solution.icon className="w-12 h-12 text-[#FF7A1A] mb-4" />
-                    <CardTitle className="text-2xl mb-2">{solution.title}</CardTitle>
+                    <CardTitle className="text-2xl mb-2 text-white">{solution.title}</CardTitle>
                     <CardDescription className="text-neutral-400 text-base">
                       {solution.description}
                     </CardDescription>
