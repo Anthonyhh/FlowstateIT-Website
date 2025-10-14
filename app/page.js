@@ -940,7 +940,7 @@ export default function FlowStateIT() {
                   
                   <Button 
                     onClick={() => scrollToSection('contact')}
-                    className="w-full bg-[#FF7A1A] hover:bg-[#FF7A1A]/90 text-white font-semibold text-lg px-8 py-6 rounded-lg hover:-translate-y-0.5 transition-all shadow-[0_8px_24px_rgba(255,122,26,0.4)]"
+                    className="w-full bg-gradient-to-r from-[#6C2BD9] to-[#FF7A1A] hover:opacity-90 text-white font-semibold text-lg px-8 py-6 rounded-lg hover:-translate-y-0.5 transition-all shadow-[0_8px_24px_rgba(108,43,217,0.4)]"
                   >
                     Get Started
                     <ArrowRight className="ml-2 w-5 h-5" />
