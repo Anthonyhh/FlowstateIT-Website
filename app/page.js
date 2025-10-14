@@ -634,7 +634,7 @@ export default function FlowStateIT() {
       </section>
 
       {/* Trust Signals Section */}
-      <section className="bg-neutral-900/50 py-12 md:py-16 border-b border-white/10">
+      <section className="bg-neutral-900/50 py-10 md:py-12 border-b border-white/10">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
           <h3 className="text-center text-xl md:text-2xl font-semibold mb-8 text-neutral-400">
             Powered by Leading AI Technologies
