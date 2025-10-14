@@ -411,16 +411,15 @@ export default function FlowStateIT() {
               
               {/* Headline */}
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
-                Scaling Business Operations with{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6C2BD9] to-[#FF7A1A]">
-                  Prompt Engineering
+                  Helping Businesses
                 </span>{' '}
-                & Enterprise AI Solutions
+                scales successfully through the power of AI
               </h1>
               
               {/* Subheadline */}
               <p className="text-lg md:text-xl text-neutral-300 leading-relaxed max-w-[600px]">
-                Transform your workflows with custom AI automation—no technical expertise required. 
+                Transform your workflows with custom AI automation no technical expertise required. 
                 Get audit results in 24 hours.
               </p>
               
