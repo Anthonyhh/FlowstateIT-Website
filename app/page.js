@@ -909,7 +909,7 @@ export default function FlowStateIT() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
               Get In Touch
             </h2>
             <p className="text-lg md:text-xl text-white max-w-[700px] mx-auto">
