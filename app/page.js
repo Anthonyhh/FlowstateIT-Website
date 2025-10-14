@@ -625,7 +625,7 @@ export default function FlowStateIT() {
                   >
                     <CountUp end={stat.value} duration={2} suffix={stat.suffix} />
                   </motion.div>
-                  <p className="text-neutral-400 text-sm md:text-base font-medium">{stat.label}</p>
+                  <p className="text-white text-sm md:text-base font-medium">{stat.label}</p>
                 </motion.div>
               </motion.div>
             ))}
@@ -636,7 +636,7 @@ export default function FlowStateIT() {
       {/* Trust Signals Section */}
       <section className="bg-neutral-900/50 py-10 md:py-12 border-b border-white/10">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-          <h3 className="text-center text-xl md:text-2xl font-semibold mb-8 text-neutral-400">
+          <h3 className="text-center text-xl md:text-2xl font-semibold mb-8 text-white">
             Powered by Leading AI Technologies
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8">
@@ -681,7 +681,7 @@ export default function FlowStateIT() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Transform Your Business with AI
             </h2>
-            <p className="text-lg md:text-xl text-neutral-400 max-w-[700px] mx-auto">
+            <p className="text-lg md:text-xl text-white max-w-[700px] mx-auto">
               Comprehensive AI solutions tailored to your unique business needs
             </p>
           </motion.div>
@@ -703,7 +703,7 @@ export default function FlowStateIT() {
                       <service.icon className="w-7 h-7 text-white" />
                     </div>
                     <CardTitle className="text-2xl mb-2 text-white">{service.title}</CardTitle>
-                    <CardDescription className="text-neutral-400 text-base">
+                    <CardDescription className="text-white text-base">
                       {service.description}
                     </CardDescription>
                   </CardHeader>
@@ -739,7 +739,7 @@ export default function FlowStateIT() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               From Vision to Reality
             </h2>
-            <p className="text-lg md:text-xl text-neutral-400 max-w-[700px] mx-auto">
+            <p className="text-lg md:text-xl text-white max-w-[700px] mx-auto">
               A proven methodology for successful AI implementation
             </p>
           </motion.div>
@@ -767,7 +767,7 @@ export default function FlowStateIT() {
                     <step.icon className="w-8 h-8 text-[#6C2BD9]" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
-                  <p className="text-neutral-400">{step.description}</p>
+                  <p className="text-white">{step.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -797,7 +797,7 @@ export default function FlowStateIT() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Real-World AI Applications
             </h2>
-            <p className="text-lg md:text-xl text-neutral-400 max-w-[700px] mx-auto">
+            <p className="text-lg md:text-xl text-white max-w-[700px] mx-auto">
               Proven solutions delivering measurable business impact
             </p>
           </motion.div>
@@ -817,7 +817,7 @@ export default function FlowStateIT() {
                   <CardHeader>
                     <solution.icon className="w-12 h-12 text-[#FF7A1A] mb-4" />
                     <CardTitle className="text-2xl mb-2 text-white">{solution.title}</CardTitle>
-                    <CardDescription className="text-neutral-400 text-base">
+                    <CardDescription className="text-white text-base">
                       {solution.description}
                     </CardDescription>
                   </CardHeader>
@@ -863,7 +863,7 @@ export default function FlowStateIT() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               See Why Customers Love FlowState IT
             </h2>
-            <p className="text-lg md:text-xl text-neutral-400 max-w-[700px] mx-auto">
+            <p className="text-lg md:text-xl text-white max-w-[700px] mx-auto">
               Real results from real businesses
             </p>
           </motion.div>
@@ -889,7 +889,7 @@ export default function FlowStateIT() {
                     </p>
                     <div className="border-t border-neutral-700 pt-4">
                       <p className="font-semibold">{testimonial.name}</p>
-                      <p className="text-sm text-neutral-400">{testimonial.role}</p>
+                      <p className="text-sm text-white">{testimonial.role}</p>
                       <p className="text-sm text-[#6C2BD9]">{testimonial.company}</p>
                     </div>
                   </CardContent>
@@ -912,7 +912,7 @@ export default function FlowStateIT() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Get In Touch
             </h2>
-            <p className="text-lg md:text-xl text-neutral-400 max-w-[700px] mx-auto">
+            <p className="text-lg md:text-xl text-white max-w-[700px] mx-auto">
               Flexible engagement models for businesses at every stage
             </p>
           </motion.div>
@@ -930,7 +930,7 @@ export default function FlowStateIT() {
                   <CardTitle className="text-3xl md:text-4xl mb-4">
                     AI Partner
                   </CardTitle>
-                  <CardDescription className="text-base md:text-lg text-neutral-400 leading-relaxed">
+                  <CardDescription className="text-base md:text-lg text-white leading-relaxed">
                     Ideal for businesses exploring AI possibilities
                   </CardDescription>
                 </CardHeader>
@@ -938,7 +938,7 @@ export default function FlowStateIT() {
                   <div>
                     <div className="flex items-baseline gap-2 mb-2">
                       <span className="text-5xl md:text-6xl font-bold">$~</span>
-                      <span className="text-lg md:text-xl text-neutral-400">/month (custom)</span>
+                      <span className="text-lg md:text-xl text-white">/month (custom)</span>
                     </div>
                   </div>
                   
@@ -982,7 +982,7 @@ export default function FlowStateIT() {
                   <CardTitle className="text-3xl md:text-4xl mb-4">
                     Fractional CAIO
                   </CardTitle>
-                  <CardDescription className="text-base md:text-lg text-neutral-400 leading-relaxed">
+                  <CardDescription className="text-base md:text-lg text-white leading-relaxed">
                     Designed for forward-looking businesses needing Chief AI Officer-level expertise
                   </CardDescription>
                 </CardHeader>
@@ -990,7 +990,7 @@ export default function FlowStateIT() {
                   <div>
                     <div className="flex items-baseline gap-2 mb-2">
                       <span className="text-5xl md:text-6xl font-bold">$17,000</span>
-                      <span className="text-lg md:text-xl text-neutral-400">/month</span>
+                      <span className="text-lg md:text-xl text-white">/month</span>
                     </div>
                   </div>
                   
@@ -1043,7 +1043,7 @@ export default function FlowStateIT() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Get Your AI Readiness Audit
             </h2>
-            <p className="text-lg md:text-xl text-neutral-400 max-w-[700px] mx-auto">
+            <p className="text-lg md:text-xl text-white max-w-[700px] mx-auto">
               Discover your AI automation potential in 3 minutes. Receive a comprehensive report with actionable recommendations.
             </p>
           </motion.div>
@@ -1060,7 +1060,7 @@ export default function FlowStateIT() {
                   <CardTitle className="text-2xl">
                     Question {currentQuestionIndex + 1} of {quizQuestions.length}
                   </CardTitle>
-                  <span className="text-sm text-neutral-400">{Math.round(progress)}% complete</span>
+                  <span className="text-sm text-white">{Math.round(progress)}% complete</span>
                 </div>
                 <div className="w-full bg-neutral-700 rounded-full h-2 overflow-hidden">
                   <motion.div 
@@ -1211,7 +1211,7 @@ export default function FlowStateIT() {
             </Card>
 
             {/* Trust Signals */}
-            <div className="mt-8 flex items-center justify-center gap-8 text-sm text-neutral-400">
+            <div className="mt-8 flex items-center justify-center gap-8 text-sm text-white">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="w-5 h-5 text-[#6C2BD9]" />
                 <span>24-hour delivery</span>
@@ -1261,7 +1261,7 @@ export default function FlowStateIT() {
                   <AccordionTrigger className="text-left hover:text-[#6C2BD9] hover:no-underline">
                     <span className="text-lg font-semibold">{faq.question}</span>
                   </AccordionTrigger>
-                  <AccordionContent className="text-neutral-400 leading-relaxed">
+                  <AccordionContent className="text-white leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>
@@ -1286,7 +1286,7 @@ export default function FlowStateIT() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Let's Talk About Your AI Journey
             </h2>
-            <p className="text-lg md:text-xl text-neutral-400 max-w-[700px] mx-auto">
+            <p className="text-lg md:text-xl text-white max-w-[700px] mx-auto">
               Get in touch to discuss how we can transform your business with AI
             </p>
           </motion.div>
@@ -1370,7 +1370,7 @@ export default function FlowStateIT() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Email</h4>
-                      <p className="text-neutral-400">hello@flowstateit.co.uk</p>
+                      <p className="text-white">hello@flowstateit.co.uk</p>
                     </div>
                   </div>
                   
@@ -1380,7 +1380,7 @@ export default function FlowStateIT() {
                     </div>
                     <div>
                       <h4 className="font-semibold mb-1">Location</h4>
-                      <p className="text-neutral-400">United Kingdom</p>
+                      <p className="text-white">United Kingdom</p>
                     </div>
                   </div>
                 </div>
@@ -1442,14 +1442,14 @@ export default function FlowStateIT() {
                 <Sparkles className="w-6 h-6 text-[#6C2BD9]" />
                 <span className="text-xl font-bold">FlowState IT</span>
               </div>
-              <p className="text-sm text-neutral-400">
+              <p className="text-sm text-white">
                 Enterprise AI solutions and prompt engineering expertise for businesses ready to scale.
               </p>
             </div>
             
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-sm text-neutral-400">
+              <ul className="space-y-2 text-sm text-white">
                 <li><a href="#services" className="hover:text-white transition">AI Automation</a></li>
                 <li><a href="#services" className="hover:text-white transition">Prompt Engineering</a></li>
                 <li><a href="#services" className="hover:text-white transition">Voice AI</a></li>
@@ -1459,7 +1459,7 @@ export default function FlowStateIT() {
             
             <div>
               <h4 className="font-semibold mb-4">Company</h4>
-              <ul className="space-y-2 text-sm text-neutral-400">
+              <ul className="space-y-2 text-sm text-white">
                 <li><a href="#process" className="hover:text-white transition">How It Works</a></li>
                 <li><a href="#solutions" className="hover:text-white transition">Solutions</a></li>
                 <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
@@ -1468,7 +1468,7 @@ export default function FlowStateIT() {
             
             <div>
               <h4 className="font-semibold mb-4">Resources</h4>
-              <ul className="space-y-2 text-sm text-neutral-400">
+              <ul className="space-y-2 text-sm text-white">
                 <li><a href="#quiz" className="hover:text-white transition">AI Readiness Audit</a></li>
                 <li><a href="#" className="hover:text-white transition">Blog</a></li>
                 <li><a href="#" className="hover:text-white transition">Case Studies</a></li>
@@ -1477,10 +1477,10 @@ export default function FlowStateIT() {
           </div>
           
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-neutral-400">
+            <p className="text-sm text-white">
               © 2025 FlowState IT. All rights reserved.
             </p>
-            <div className="flex gap-6 text-sm text-neutral-400">
+            <div className="flex gap-6 text-sm text-white">
               <a href="#" className="hover:text-white transition">Privacy Policy</a>
               <a href="#" className="hover:text-white transition">Terms of Service</a>
             </div>
