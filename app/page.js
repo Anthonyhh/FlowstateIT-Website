@@ -1309,12 +1309,12 @@ export default function FlowStateIT() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <Card className="bg-neutral-800/50 backdrop-blur-sm border-neutral-700/50">
+              <Card className="bg-neutral-800/50 backdrop-blur-sm border-neutral-700/50" suppressHydrationWarning>
                 <CardHeader>
                   <CardTitle className="text-2xl text-white">Send us a message</CardTitle>
                   <CardDescription>We'll respond within 24 hours</CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent suppressHydrationWarning>
                   <form onSubmit={handleContactSubmit} className="space-y-4" suppressHydrationWarning>
                     <div>
                       <label className="text-sm font-medium mb-2 block text-white">Name</label>
