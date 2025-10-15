@@ -420,7 +420,7 @@ export default function FlowStateIT() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-start pt-16 md:pt-24">
+      <section className="relative min-h-[55vh] flex items-start pt-16 pb-4 md:pt-24 md:pb-6">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-[#6C2BD9]/20 via-transparent to-[#FF7A1A]/10" />
           <img 
