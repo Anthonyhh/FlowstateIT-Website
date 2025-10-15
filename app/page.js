@@ -431,7 +431,7 @@ export default function FlowStateIT() {
         </div>
         
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 py-12 md:py-16 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Left Column - Content */}
             <motion.div 
               initial={{ opacity: 0, x: -30 }}
