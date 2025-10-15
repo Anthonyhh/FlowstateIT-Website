@@ -477,8 +477,7 @@ export default function FlowStateIT() {
                 <Button 
                   onClick={() => scrollToSection('services')}
                   size="lg"
-                  variant="outline"
-                  className="border-2 border-white/30 text-white hover:bg-white hover:!text-[#14141C] transition-all px-8 py-6 text-lg font-semibold rounded-lg"
+                  className="border-2 border-white/30 bg-transparent text-white hover:bg-white hover:!text-[#14141C] transition-all px-8 py-6 text-lg font-semibold rounded-lg"
                 >
                   View Services
                 </Button>
