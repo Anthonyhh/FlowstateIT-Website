@@ -437,7 +437,7 @@ export default function FlowStateIT() {
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
-              className="space-y-6 pt-2 md:pt-4"
+              className="space-y-6 pt-0"
             >
               {/* Badge */}
               <motion.div 
