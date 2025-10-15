@@ -430,7 +430,7 @@ export default function FlowStateIT() {
           />
         </div>
         
-        <div className="max-w-[1400px] mx-auto px-6 md:px-12 pt-12 pb-4 md:pt-16 md:pb-6 relative z-10">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-12 pt-4 pb-2 md:pt-6 md:pb-3 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-start">
             {/* Left Column - Content */}
             <motion.div 
