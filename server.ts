@@ -10,15 +10,18 @@ const PORT = process.env.PORT || 3002
 
 // Initialize Payload
 const start = async (): Promise<void> => {
+  // Initialize Payload with config
   await payload.init({
-    secret: process.env.PAYLOAD_SECRET || '',
-    express: app,
+    config: await import('./payload.config').then(mod => mod.default),
     onInit: async () => {
       payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`)
     },
   })
 
-  // Add custom routes before payload middleware
+  // Middleware
+  app.use(payload.authenticate)
+
+  // Add custom routes
   app.get('/health', (req, res) => {
     res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() })
   })
@@ -36,7 +39,6 @@ const start = async (): Promise<void> => {
 }
 
 start().catch((error) => {
-  payload.logger.error('Failed to start server')
-  payload.logger.error(error)
+  console.error('Failed to start server:', error)
   process.exit(1)
 })
