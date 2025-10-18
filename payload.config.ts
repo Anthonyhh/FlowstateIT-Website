@@ -50,10 +50,4 @@ export default buildConfig({
   graphQL: {
     schemaOutputFile: path.resolve(__dirname, 'generated-schema.graphql'),
   },
-
-  // Rate limiting
-  rateLimit: {
-    max: 500,
-    trustProxy: true,
-  },
 })
