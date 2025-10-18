@@ -41,7 +41,8 @@
       "Bash(pnpm lint:*)",
       "Bash(rm:*)",
       "Bash(git remote remove:*)",
-      "Bash(git remote rename:*)"
+      "Bash(git remote rename:*)",
+      "Bash(git pull:*)"
     ],
     "deny": [],
     "ask": []
