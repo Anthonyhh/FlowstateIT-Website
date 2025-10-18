@@ -243,7 +243,7 @@ export default function PromptEngineeringGuide() {
             <Card className="bg-neutral-900/50 border-neutral-700/50 my-6">
               <CardContent className="pt-6">
                 <p className="text-white/70 text-sm mb-2">Prompt Template:</p>
-                <p className="text-white/90">"You are a customer service agent for [COMPANY]. Analyze this customer message and provide: 1) Sentiment (positive/negative/neutral/urgent), 2) Category (billing/technical/general), 3) Priority (1-5), 4) Suggested response (professional, empathetic, solution-focused), 5) Required actions (array). Customer message: {{MESSAGE}}"</p>
+                <p className="text-white/90">"You are a customer service agent for [COMPANY]. Analyze this customer message and provide: 1) Sentiment (positive/negative/neutral/urgent), 2) Category (billing/technical/general), 3) Priority (1-5), 4) Suggested response (professional, empathetic, solution-focused), 5) Required actions (array). Customer message: [MESSAGE]"</p>
               </CardContent>
             </Card>
 
@@ -259,7 +259,7 @@ export default function PromptEngineeringGuide() {
             <Card className="bg-neutral-900/50 border-neutral-700/50 my-6">
               <CardContent className="pt-6">
                 <p className="text-white/70 text-sm mb-2">Prompt Template:</p>
-                <p className="text-white/90">"Extract the following information from the invoice below and return as JSON: {invoice_number, date, vendor_name, total_amount, line_items: [{description, quantity, unit_price, total}]}. If any field is not found, use null. Be precise with numbers. Invoice text: {{INVOICE_TEXT}}"</p>
+                <p className="text-white/90">"Extract the following information from the invoice below and return as JSON: invoice_number, date, vendor_name, total_amount, line_items (with description, quantity, unit_price, total for each item). If any field is not found, use null. Be precise with numbers. Invoice text: INVOICE_TEXT"</p>
               </CardContent>
             </Card>
 
