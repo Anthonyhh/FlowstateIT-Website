@@ -1,13 +1,20 @@
+import { withPayload } from '@payloadcms/next/withPayload'
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
     formats: ['image/avif', 'image/webp'],
-    domains: [],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*.r2.cloudflarestorage.com',
+      },
+    ],
   },
-  experimental: {
-    optimizeCss: true,
-  },
+  // experimental: {
+  //   optimizeCss: true, // Requires 'critters' package
+  // },
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
@@ -19,4 +26,4 @@ const nextConfig = {
   },
 }
 
-export default nextConfig
+export default withPayload(nextConfig)
