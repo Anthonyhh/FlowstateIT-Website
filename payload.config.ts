@@ -7,6 +7,7 @@ import { slateEditor } from '@payloadcms/richtext-slate'
 import { Users } from './collections/Users'
 
 export default buildConfig({
+  secret: process.env.PAYLOAD_SECRET || 'your-secret-key-min-32-characters',
   serverURL: process.env.NEXT_PUBLIC_SERVER_URL || 'http://localhost:3002',
   
   admin: {
