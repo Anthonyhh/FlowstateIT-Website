@@ -13,8 +13,6 @@ export default buildConfig({
     user: Users.slug,
     meta: {
       titleSuffix: '- FlowState IT CMS',
-      favicon: '/favicon.ico',
-      ogImage: '/og-image.png',
     },
   },
 
