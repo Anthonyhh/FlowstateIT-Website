@@ -27,9 +27,16 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'FlowstateIT - AI Website Factory',
-  description:
-    'A self-deploying, keyword-adaptive website platform that merges enterprise-grade headless architecture with cinematic design',
+  title: 'FlowState IT | Enterprise AI Solutions & Prompt Engineering',
+  description: 'Automate your business operations with custom AI solutions. Get your AI Readiness Audit in 24 hours. Expert prompt engineering for enterprise scale.',
+  keywords: ['AI automation', 'prompt engineering', 'enterprise AI', 'business automation', 'AI consulting', 'fractional CAIO'],
+  openGraph: {
+    title: 'FlowState IT | Enterprise AI Solutions',
+    description: 'Transform your workflows with custom AI automation',
+    type: 'website',
+    locale: 'en_GB',
+    url: 'https://flowstateit.co.uk',
+  },
   formatDetection: {
     email: false,
     address: false,
