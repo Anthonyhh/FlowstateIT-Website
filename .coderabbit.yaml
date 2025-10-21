@@ -1,0 +1,212 @@
+# CodeRabbit Configuration for FlowState IT Website
+# AI Code Review settings aligned with CLAUDE.md best practices
+
+language: "en-US"
+tone_instructions: |
+  Follow the project's CLAUDE.md guidelines strictly. Focus on:
+  - TDD compliance and test quality
+  - Function naming consistency with existing domain vocabulary
+  - Security best practices (XSS protection, input sanitization, rate limiting)
+  - UI/Animation standards (performance, accessibility, prefers-reduced-motion)
+  - Type safety with branded types for IDs
+  - Production readiness (logging, monitoring, error handling)
+
+early_access: false
+
+reviews:
+  profile: "assertive"
+  request_changes_workflow: false
+  high_level_summary: true
+  high_level_summary_placeholder: "<!-- CodeRabbit AI Summary -->"
+  auto_title_placeholder: "<!-- CodeRabbit AI Title -->"
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  sequence_diagrams: false
+  changed_files_summary: true
+  labeling_instructions: []
+
+  auto_review:
+    enabled: true
+    auto_incremental_review: true
+    ignore_title_keywords: []
+    drafts: false
+    base_branches:
+      - master
+      - main
+
+  path_filters:
+    - "!**/node_modules/**"
+    - "!**/dist/**"
+    - "!**/build/**"
+    - "!**/.next/**"
+    - "!**/coverage/**"
+    - "!**/*.lock"
+    - "!**/pnpm-lock.yaml"
+    - "!**/package-lock.json"
+
+  path_instructions:
+    - path: "app/api/**/*.ts"
+      instructions: |
+        For API routes:
+        - Verify integration tests exist in *.integration.spec.ts
+        - Check for proper error handling and logging with correlation IDs
+        - Ensure input sanitization and XSS protection
+        - Verify rate limiting is applied
+        - Check for database connection pooling usage
+        - Ensure no sensitive data in error responses
+
+    - path: "lib/**/*.ts"
+      instructions: |
+        For shared utilities:
+        - Verify unit tests exist in *.spec.ts
+        - Check for proper type safety with branded types
+        - Ensure functions are pure and testable
+        - Verify no unnecessary classes when functions suffice
+
+    - path: "components/**/*.tsx"
+      instructions: |
+        For React components:
+        - Check for proper accessibility (ARIA labels, keyboard navigation)
+        - Verify animation performance (CSS transforms, prefers-reduced-motion)
+        - Ensure proper use of CVA for variants
+        - Check for Radix UI primitive usage where appropriate
+        - Verify responsive design considerations
+
+    - path: "**/*.spec.ts"
+      instructions: |
+        For tests:
+        - Ensure tests can fail for real defects (no trivial assertions)
+        - Check for parameterized inputs (no magic numbers/strings)
+        - Verify test descriptions match what's being asserted
+        - Look for property-based tests for security-critical functions
+        - Ensure separation of unit tests from integration tests
+        - Check for realistic edge cases and boundary values
+
+  finishing_touches:
+    add_unit_tests:
+      enabled: true
+      instructions: |
+        Follow CLAUDE.md test best practices:
+        - Colocate unit tests in *.spec.ts files
+        - Use property-based testing (fast-check) for invariants
+        - Test edge cases, boundaries, and realistic inputs
+        - Use strong assertions (toEqual vs toBeGreaterThanOrEqual)
+        - Ensure tests can fail for real defects
+        - For security functions, test XSS and injection attack vectors
+
+    add_docstrings:
+      enabled: false
+      instructions: "Only add docstrings for critical caveats; prefer self-explanatory code per CLAUDE.md C-7"
+
+  pre_merge_checks:
+    title:
+      enabled: true
+      instructions: "Ensure title follows Conventional Commits format (feat:, fix:, chore:, etc.)"
+
+    description:
+      enabled: true
+      instructions: "Verify PR description explains the why, not just the what"
+
+    code:
+      enabled: true
+      instructions: |
+        Verify all code changes pass:
+        - prettier --check (no formatting issues)
+        - npm run typecheck (no TypeScript errors)
+        - npm run lint (no ESLint violations)
+        - All tests pass (unit and integration)
+
+  tools:
+    biome:
+      enabled: false
+
+    eslint:
+      enabled: true
+
+    gitleaks:
+      enabled: true
+
+    hadolint:
+      enabled: false
+
+    languagetool:
+      enabled: false
+
+    markdownlint:
+      enabled: true
+
+    ruff:
+      enabled: false
+
+    shellcheck:
+      enabled: false
+
+    swiftlint:
+      enabled: false
+
+    yamllint:
+      enabled: true
+
+chat:
+  auto_reply:
+    enabled: true
+    instructions: "Provide helpful context from CLAUDE.md when relevant to the discussion"
+
+knowledge_base:
+  learnings:
+    scope: "organization"
+
+  code_guidelines:
+    enabled: true
+    guidelines:
+      - name: "Implementation Best Practices"
+        instructions: |
+          Reference CLAUDE.md sections:
+          - BP-1: Ask clarifying questions before coding
+          - C-1: Follow TDD (stub -> test -> implement)
+          - C-5: Use branded types for IDs
+          - C-6: Use import type for type-only imports
+          - O-1: Place shared utilities in lib/ directory
+
+      - name: "Security Requirements"
+        instructions: |
+          Enforce CLAUDE.md security standards:
+          - S-1: Sanitize all user inputs
+          - S-2: Implement XSS protection
+          - S-3: Validate emails against injection
+          - S-4: Whitelist URL protocols
+          - S-8: Never log sensitive data
+
+      - name: "UI/Animation Standards"
+        instructions: |
+          Follow CLAUDE.md animation rules:
+          - UI-1: Layer animations (Tailwind -> Framer -> Canvas)
+          - UI-2: Support prefers-reduced-motion
+          - UI-3: Use CSS transforms for performance
+          - UI-4: Use requestAnimationFrame for Canvas
+          - UI-5: Use CVA for component variants
+
+      - name: "Test Quality"
+        instructions: |
+          Apply CLAUDE.md test checklist:
+          - Parameterize inputs (no magic literals)
+          - Test descriptions must match assertions
+          - Use property-based testing for invariants
+          - Separate unit tests from integration tests
+          - Test security attack vectors for critical functions
+
+      - name: "Function Writing"
+        instructions: |
+          Use CLAUDE.md function checklist:
+          - Ensure code is easily readable and followable
+          - Avoid high cyclomatic complexity
+          - No unnecessary type casts
+          - Make functions easily testable
+          - Use consistent naming with existing vocabulary
+
+  jira:
+    project_keys: []
+
+  linear:
+    team_keys: []
