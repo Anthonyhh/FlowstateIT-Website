@@ -40,6 +40,18 @@ A high-performance, conversion-optimized single-page web application for FlowSta
 | Automation | n8n Webhooks |
 | Hosting | Vercel (recommended) |
 
+## 🤖 AI Code Review
+
+This project uses **CodeRabbit** for automated AI-powered code reviews on all pull requests. CodeRabbit enforces our CLAUDE.md best practices including:
+
+- Test-Driven Development (TDD) compliance
+- Security standards (XSS protection, input sanitization)
+- UI/Animation performance and accessibility
+- Type safety with branded types
+- Production readiness checks
+
+See [CODERABBIT_SETUP.md](./CODERABBIT_SETUP.md) for configuration details.
+
 ## 🛠️ Setup Instructions
 
 ### 1. Install Dependencies
