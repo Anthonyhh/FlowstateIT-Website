@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.1.1",
-    "@payloadcms/db-mongodb": "^3.59.1",
+    "@payloadcms/db-mongodb": "^3.87.0",
     "@payloadcms/next": "^3.59.1",
     "@payloadcms/plugin-cloud-storage": "^3.59.1",
     "@payloadcms/richtext-lexical": "^3.59.1",
